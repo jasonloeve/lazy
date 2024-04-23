@@ -1,0 +1,9 @@
+/**
+ * GraphQL fragment for CustomComponent.
+ * Define the necessary fields for the component.
+ */
+fragment CustomComponentFragment on CustomComponent {
+  id
+  name
+  // Additional GraphQL fields here
+}

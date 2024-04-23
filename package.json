@@ -1,0 +1,57 @@
+{
+  "name": "lazy-gen",
+  "version": "1.0.0",
+  "description": "A custom component generator",
+  "author": "Jason Loeve <jasonloeve@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "jest",
+    "create": "node scripts/create.js"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "chalk": "^3.0.0",
+    "commander": "^5.0.0",
+    "conf": "^2.2.0",
+    "cp-file": "^6.0.0",
+    "execa": "^4.0.0",
+    "git-config-path": "^2.0.0",
+    "github-username": "^5.0.1",
+    "globby": "^11.0.0",
+    "handlebars": "^4.7.4",
+    "inquirer": "^7.1.0",
+    "make-dir": "^3.0.2",
+    "ora": "^4.0.3",
+    "p-each-series": "^2.1.0",
+    "parse-git-config": "^3.0.0",
+    "validate-npm-package-name": "^3.0.0",
+    "which": "^2.0.2"
+  },
+  "devDependencies": {
+    "ava": "^3.5.2",
+    "rmfr": "^2.0.0",
+    "standard": "^14.3.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "bin": {
+    "lazy-gen": "index.js"
+  },
+  "keywords": [
+    "custom-component",
+    "generator",
+    "npm",
+    "package"
+  ],
+  "ava": {
+    "failFast": true,
+    "timeout": "10m",
+    "files": [
+      "index.test.js",
+      "lib/**/*.test.js"
+    ]
+  }
+}

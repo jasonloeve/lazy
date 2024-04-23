@@ -2,9 +2,9 @@
  * Mock data for CustomComponent.
  * Use this data for testing and development.
  */
-export const customComponentName = 'CustomComponent';
-export const customComponentMock = {
+export const {{ componentName }}Name = '{{ componentName }}';
+export const {{ componentName }}Mock = {
   id: '1',
-  name: customComponentName,
-  // Additional mock data for CustomComponent
+  name: {{ componentName }}Name,
+// Additional mock data for {{ componentName }}
 };

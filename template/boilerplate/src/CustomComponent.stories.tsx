@@ -1,23 +1,23 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import CustomComponent from './CustomComponent';
+import {{ componentName }} from './{{ componentName }}';
 
 /**
- * Storybook stories for CustomComponent.
+ * Storybook stories for {{ componentName }}.
  * Define different stories and variations for the component.
  */
-export const customComponentName = 'CustomComponent';
+export const {{ componentName }}Name = '{{ componentName }}';
 
 export default {
-  title: customComponentName,
-  component: CustomComponent,
+  title: {{ componentName }}Name,
+  component: {{ componentName }},
 } as Meta;
 
-const Template: Story = (args) => <CustomComponent {...args} />;
+const Template: Story = (args) => <{{ componentName }} {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
   id: '1',
-  name: customComponentName,
-  // Default args here
+  name: {{ componentName }}Name,
+// Default args here
 };

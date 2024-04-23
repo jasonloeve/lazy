@@ -1,19 +1,20 @@
 import React from 'react';
-import styles from './CustomComponent.module.css';
-import { CustomComponentProps } from './CustomComponent.types';
+import styles from './{{ componentName }}.module.css';
+import { {{ componentName }}Props } from './{{ componentName }}.types';
 
 /**
- * Main component file for CustomComponent.
+ * Main component file for {{ componentName }}.
  * Define the component's structure and behavior here.
  */
-export const customComponentName = 'CustomComponent';
+export const {{ componentName }}Name = '{{ componentName }}';
 
-const CustomComponent: React.FC<CustomComponentProps> = ({ /* Props */ }) => {
+const {{ componentName }}: React.FC<{{ componentName }}Props> = ({ /* Props */ }) => {
   return (
-    <div className={styles.customComponent}>
-      {/* Component content */}
-    </div>
-  );
-};
+    <div className={styles.{{ componentName }}>
+    {/* Component content */}
+      </div>
+      );
+    };
 
-export default CustomComponent;
+export default {{ componentName }};
+
